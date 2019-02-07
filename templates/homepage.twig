@@ -1,0 +1,78 @@
+{% extends 'page-specialcase.twig' %}
+
+{% block head %}
+{{ parent() }}
+<link rel='stylesheet' href='{{static}}css/home.css'>
+{% endblock %}
+
+{% block body %}
+        <table align="center" width="900">
+          <tr>
+            <td colspan="2" id="topmenu">
+							<table width="100%" >
+                <tr align="center">
+
+                <td> <a style="color:#336699" href="/listing.php">Classifieds</a></td>
+                <td> <a style="color:#336699" href="/eFLYER/eflyerARCHIVES.html">eFLYER</a></td>
+                <td> <a style="color:#336699" href="/events.php">Events</a></td>
+								<td> <a style="color:#336699" href="/fraud/fraud.html">Fraud</a> </td>
+                <td> <a style="color:#336699" href="guestbook.php">Testimonials</a></td>
+                <td> <a style="color:#336699" href="ad_manager/my_ads.php">Post Ad</a> </td>
+                <td> <a style="color:#336699" href="cat.php?mode=search">Search Ads</a> </td>
+                <td> <a style="color:#336699" href="HELP/HELP.php">Help</a></td>
+                <td> <a style="color:#336699" href="acct.php">My Hangar</a></td>
+                </tr>
+							</table>
+          <tr>
+            <td align="left">
+              <!-- Logo -->
+               <img src="{{static}}images/index-barntitle.png" />
+            </td>
+            <td align="right">
+              <!-- Hangar -->
+              <img src="{{static}}images/index-hangarandtower.gif" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="padding:10px">
+              <table align="center" cellspacing="10px">
+                <tr align="center">
+                  <td class="button"><a href="ad_manager/my_ads.php">Submit Ad</a></td>
+                  <td>&nbsp;</td>
+                  <td class="button"><a href="/listing.php">Browse Ads</a></td>
+                  <td>&nbsp;</td>
+                  <td class="button"><a href="cat.php?mode=search">Search Ads </a></td>
+                  <td>&nbsp;</td>
+                  <td class="button"><a href="acct.php">Log In </a></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+              </table>
+
+<center>
+       <DIV align=center><FONT face="Arial, Helvetica, sans-serif" COLOR="#294687" size="2"><img src="{{static}}images/GetResults-900x54.gif" border=0 width="900" height="54"></FONT></DIV>
+			          
+								<DIV align=center><br><FONT face="Arial, Helvetica, sans-serif" COLOR="#264cb5" size="3"><B>Barnstormers Receives More Than A Million Visits and 17 Million Pageviews From 200 Countries - EVERY MONTH</B></FONT></DIV>
+
+<TABLE><TR><BR>
+<TD><a href="https://www.facebook.com/BarnstormersInc" target="_blank" align="left"><img src="{{static}}images/index-facebook.png" border="0" style="margin:1px;"></a></TD>
+<TD width="100">
+<TD align=center>
+    <FONT face="Arial, Helvetica, sans-serif" COLOR="#294687" size="4"><STRONG>HOMEPAGE FEATURED ADS</STRONG></FONT><br>
+                 <FONT face="Arial, Helvetica, sans-serif" COLOR="#294687" size="1"><STRONG>CLICK ON IMAGE TO VIEW CLASSIFIED AD</STRONG></FONT>
+    <!--
+--></TD>
+<TD width="100">
+<TD><a href="https://twitter.com/BarnstormersInc" target="_blank" align="right"><img src="{{static}}images/index-twitter.png" border="0" style="margin:1px;"></a></TD>
+<TD><a href="https://plus.google.com/{+PageId}" rel="publisher"></a></TD>
+</TR></TABLE>
+
+{{ include('_homebanner.twig') }}
+
+<br/><br/>
+<div style="font-family:Arial Narrow;font-size:14px; font-weight:bold;"><a href="guestbook.php" >CLICK HERE TO READ THE TESTIMONIALS</a></div>
+Registered Copyright &copy; 1995-{{"now"|date("Y")}} barnstormers.com All Rights Reserved.<br/><br/>
+<A HREF="http://www.barnstormers.com/LegalNotices.html">Legal Notices</A><br>
+</center>
+{% endblock %}
